@@ -54,5 +54,10 @@ class ViewController: UIViewController {
         dice2.image = UIImage(named: diceImages[diceValueIndex2])
     }
     
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        //ends shaking
+        print("shaking")
+        randomize()
+    }
 }
 
